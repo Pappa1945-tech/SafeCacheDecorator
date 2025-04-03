@@ -1,3 +1,23 @@
+
+### Harvard CS50P Final Project  
+*Submitted for [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)*  
+
+## Why This Stands Out 🔥
+
+- 🧵 **Thread-Safe** - Uses `RLock` for concurrent access
+- ⚡ **Non-Hashable Support** - Automatically converts lists/dicts to hashable tuples *(rare in caching decorators!)*
+- ⏱️ **TTL Support** - Auto-expires cache entries
+- ♻️ **LRU Eviction** - Drops least-used items when `maxsize` reached
+- 🛡️ **Exception-Resilient** - Caches successes but retries failures
+
+### Example: Caching with Lists/Dicts
+@SafeCache()
+def process_data(items: list, config: dict):
+    return expensive_operation(items, config)
+
+# Works seamlessly where standard caches fail!
+process_data([1,2], {"key": "value"})  
+  
 # SafeCache: A Universal Python Cache Decorator
 
 ## 🚀 Overview
