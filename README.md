@@ -10,6 +10,9 @@
 - ♻️ **LRU Eviction** - Drops least-used items when `maxsize` reached
 - 🛡️ **Exception-Resilient** - Caches successes but retries failures
 
+## Validation Tests
+See performance_test.py for performance comparisons against Python's native caching.
+
 ### Example: Caching with Lists/Dicts
 @SafeCache()
 def process_data(items: list, config: dict):
