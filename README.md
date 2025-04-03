@@ -12,6 +12,12 @@
 
 ## Validation Tests
 See performance_test.py for performance comparisons against Python's native caching.
+## Benchmark Results
+| Approach       | Time (3 iterations) | Handles Lists/Dicts |
+|----------------|---------------------|---------------------|
+| No Cache       | 9.00s               | Yes                 |
+| `lru_cache`    | Fails               | No                  |
+| `SafeCache`    | **3.00s**           | **Yes**             |
 
 ### Example: Caching with Lists/Dicts
 @SafeCache()
