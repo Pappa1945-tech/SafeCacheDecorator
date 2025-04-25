@@ -1,7 +1,4 @@
 
-### Harvard CS50P Final Project  
-*Submitted for [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/)*  
-
 ## Why This Stands Out 🔥
 
 - 🧵 **Thread-Safe** - Uses `RLock` for concurrent access
